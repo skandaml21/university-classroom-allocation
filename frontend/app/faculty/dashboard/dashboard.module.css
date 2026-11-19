@@ -1,0 +1,346 @@
+.page {
+  min-height: 100vh;
+  padding: 38px;
+  color: #f4f1ff;
+  background:
+    radial-gradient(circle at 10% 0%, rgba(110, 65, 190, 0.2), transparent 35%),
+    linear-gradient(135deg, #0b1022, #15132d 55%, #1c1538);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  color: #ad91ff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #aaa6c4;
+  font-size: 14px;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.primaryButton,
+.logoutButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  padding: 12px 17px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.primaryButton {
+  color: white;
+  border: 1px solid rgba(190, 166, 255, 0.3);
+  background: linear-gradient(135deg, #7652c8, #9368df);
+}
+
+.logoutButton {
+  color: #ffc1c1;
+  border: 1px solid rgba(255, 140, 140, 0.25);
+  background: rgba(180, 60, 80, 0.1);
+}
+
+.profileCard,
+.statCard,
+.section,
+.courseCard,
+.emptyCard {
+  border: 1px solid rgba(185, 164, 255, 0.15);
+  border-radius: 16px;
+  background: rgba(29, 27, 57, 0.82);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.profileCard {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 22px;
+  margin-bottom: 22px;
+}
+
+.avatar {
+  width: 58px;
+  height: 58px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #7751c5, #a77ce8);
+  color: white;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.profileCard h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.profileCard p {
+  color: #aaa6c4;
+  font-size: 12px;
+  margin-bottom: 7px;
+}
+
+.profileCard > div:nth-child(2) > span {
+  color: #c7adff;
+  font-size: 12px;
+}
+
+.roleBadge,
+.countBadge {
+  margin-left: auto;
+  color: #cbb5ff;
+  background: rgba(139, 100, 210, 0.16);
+  border: 1px solid rgba(185, 164, 255, 0.18);
+  padding: 7px 11px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 17px;
+  margin-bottom: 25px;
+}
+
+.statCard {
+  padding: 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.statCard span {
+  color: #aaa6c4;
+  font-size: 13px;
+}
+
+.statCard strong {
+  font-size: 30px;
+}
+
+.statCard small {
+  color: #918ba9;
+  font-size: 11px;
+}
+
+.section {
+  padding: 25px;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.sectionHeader h2 {
+  font-size: 19px;
+  margin-bottom: 7px;
+}
+
+.sectionHeader p {
+  color: #a7a2c0;
+  font-size: 12px;
+}
+
+.countBadge {
+  margin-left: 0;
+  white-space: nowrap;
+}
+
+.courseGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.courseCard {
+  padding: 20px;
+  background: rgba(20, 20, 45, 0.8);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.courseCard:hover {
+  transform: translateY(-3px);
+  border-color: rgba(185, 164, 255, 0.4);
+}
+
+.courseTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 17px;
+}
+
+.courseCode {
+  padding: 7px 10px;
+  border-radius: 8px;
+  background: rgba(139, 100, 210, 0.17);
+  border: 1px solid rgba(185, 164, 255, 0.2);
+  color: #d6c7ff;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.courseIcon {
+  color: #b99aff;
+  font-size: 22px;
+}
+
+.courseCard h3 {
+  font-size: 16px;
+  min-height: 40px;
+  margin-bottom: 15px;
+}
+
+.courseDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 14px 0;
+  border-top: 1px solid rgba(185, 164, 255, 0.12);
+  border-bottom: 1px solid rgba(185, 164, 255, 0.12);
+}
+
+.courseDetails div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.courseDetails span {
+  color: #918ba9;
+  font-size: 11px;
+}
+
+.courseDetails strong {
+  color: #ded3ff;
+  font-size: 11px;
+  text-align: right;
+}
+
+.courseLink {
+  display: inline-block;
+  margin-top: 16px;
+  color: #c7adff;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.courseLink:hover {
+  color: white;
+}
+
+.emptyState {
+  padding: 45px 20px;
+  text-align: center;
+  color: #aaa6c4;
+}
+
+.emptyState h3 {
+  color: #f4f1ff;
+  margin-bottom: 9px;
+}
+
+.emptyState p {
+  font-size: 12px;
+}
+
+.emptyCard {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 35px;
+  text-align: center;
+}
+
+.emptyCard p {
+  color: #aaa6c4;
+  margin: 14px 0;
+}
+
+.emptyCard a {
+  color: #c7adff;
+}
+
+.footer {
+  margin-top: 25px;
+  color: #77718e;
+  text-align: center;
+  font-size: 11px;
+}
+
+@media (max-width: 950px) {
+  .courseGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .page {
+    padding: 23px 16px;
+  }
+
+  .header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .headerActions {
+    flex-wrap: wrap;
+  }
+
+  .header h1 {
+    font-size: 26px;
+  }
+
+  .profileCard {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .roleBadge {
+    margin-left: 0;
+  }
+
+  .statsGrid,
+  .courseGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 17px;
+  }
+}
