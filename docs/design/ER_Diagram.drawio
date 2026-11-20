@@ -1,0 +1,205 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="er" name="ER Diagram">
+    <mxGraphModel dx="1515" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1620" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;fontSize=18;fontStyle=1;align=left;" value="University Classroom Allocation System — ER Diagram (Crow&#39;s Foot)" vertex="1">
+          <mxGeometry height="30" width="700" x="40" as="geometry" />
+        </mxCell>
+        <mxCell id="users" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" value="users" vertex="1">
+          <mxGeometry height="138" width="295" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="users_0" parent="users" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=1;" value="PK     user_id : INT" vertex="1">
+          <mxGeometry height="22" width="295" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="users_1" parent="users" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" value="       name : VARCHAR(100)" vertex="1">
+          <mxGeometry height="22" width="295" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="users_2" parent="users" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" value="UK     email : VARCHAR(150)" vertex="1">
+          <mxGeometry height="22" width="295" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="users_3" parent="users" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" value="       password_hash : TEXT" vertex="1">
+          <mxGeometry height="22" width="295" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="users_4" parent="users" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" value="       role : VARCHAR(20)" vertex="1">
+          <mxGeometry height="22" width="295" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="departments" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" value="departments" vertex="1">
+          <mxGeometry height="72" width="295" x="430" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="departments_0" parent="departments" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=1;" value="PK     department_id : INT" vertex="1">
+          <mxGeometry height="22" width="295" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="departments_1" parent="departments" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" value="UK     department_name : VARCHAR(100)" vertex="1">
+          <mxGeometry height="22" width="295" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="courses" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" value="courses" vertex="1">
+          <mxGeometry height="116" width="295" x="820" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="courses_0" parent="courses" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=1;" value="PK     course_id : INT" vertex="1">
+          <mxGeometry height="22" width="295" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="courses_1" parent="courses" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" value="       course_name : VARCHAR(150)" vertex="1">
+          <mxGeometry height="22" width="295" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="courses_2" parent="courses" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" value="UK     course_code : VARCHAR(20)" vertex="1">
+          <mxGeometry height="22" width="295" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="courses_3" parent="courses" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" value="FK     department_id : INT" vertex="1">
+          <mxGeometry height="22" width="295" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="faculty" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" value="faculty" vertex="1">
+          <mxGeometry height="94" width="295" x="40" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="faculty_0" parent="faculty" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=1;" value="PK     faculty_id : INT" vertex="1">
+          <mxGeometry height="22" width="295" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="faculty_1" parent="faculty" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" value="FK,UK  user_id : INT" vertex="1">
+          <mxGeometry height="22" width="295" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="faculty_2" parent="faculty" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" value="FK     department_id : INT" vertex="1">
+          <mxGeometry height="22" width="295" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="course_offerings" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" value="course_offerings" vertex="1">
+          <mxGeometry height="160" width="295" x="430" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="course_offerings_0" parent="course_offerings" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=1;" value="PK     offering_id : INT" vertex="1">
+          <mxGeometry height="22" width="295" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="course_offerings_1" parent="course_offerings" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" value="FK     course_id : INT" vertex="1">
+          <mxGeometry height="22" width="295" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="course_offerings_2" parent="course_offerings" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" value="FK     faculty_id : INT" vertex="1">
+          <mxGeometry height="22" width="295" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="course_offerings_3" parent="course_offerings" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" value="       expected_strength : INT" vertex="1">
+          <mxGeometry height="22" width="295" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="course_offerings_4" parent="course_offerings" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" value="       semester : VARCHAR(30)" vertex="1">
+          <mxGeometry height="22" width="295" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="course_offerings_5" parent="course_offerings" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" value="       academic_year : VARCHAR(20)" vertex="1">
+          <mxGeometry height="22" width="295" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="offering_required_facilities" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;" value="offering_required_facilities" vertex="1">
+          <mxGeometry height="72" width="295" x="820" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="offering_required_facilities_0" parent="offering_required_facilities" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=1;" value="PK,FK  offering_id : INT" vertex="1">
+          <mxGeometry height="22" width="295" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="offering_required_facilities_1" parent="offering_required_facilities" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=1;" value="PK,FK  facility_id : INT" vertex="1">
+          <mxGeometry height="22" width="295" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="facilities" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" value="facilities" vertex="1">
+          <mxGeometry height="72" width="295" x="1210" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="facilities_0" parent="facilities" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=1;" value="PK     facility_id : INT" vertex="1">
+          <mxGeometry height="22" width="295" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="facilities_1" parent="facilities" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" value="UK     facility_name : VARCHAR(100)" vertex="1">
+          <mxGeometry height="22" width="295" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="time_slots" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" value="time_slots" vertex="1">
+          <mxGeometry height="112" width="295" x="40" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="time_slots_0" parent="time_slots" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=1;" value="PK     slot_id : INT" vertex="1">
+          <mxGeometry height="22" width="295" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="time_slots_1" parent="time_slots" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" value="       start_time : TIME" vertex="1">
+          <mxGeometry height="22" width="295" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="time_slots_2" parent="time_slots" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" value="       end_time : TIME&#xa;&#xa;UK   (start_time, end_time)&#xa;" vertex="1">
+          <mxGeometry height="40" width="295" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="allocations" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;" value="allocations" vertex="1">
+          <mxGeometry height="160" width="340" x="410" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="allocations_0" parent="allocations" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=1;" value="PK     allocation_id : INT" vertex="1">
+          <mxGeometry height="22" width="340" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="allocations_1" parent="allocations" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" value="FK     offering_id : INT" vertex="1">
+          <mxGeometry height="22" width="340" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="allocations_2" parent="allocations" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" value="FK     room_id : INT" vertex="1">
+          <mxGeometry height="22" width="340" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="allocations_3" parent="allocations" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" value="FK     slot_id : INT" vertex="1">
+          <mxGeometry height="22" width="340" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="allocations_4" parent="allocations" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" value="       day_of_week : VARCHAR(15)" vertex="1">
+          <mxGeometry height="22" width="340" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="allocations_5" parent="allocations" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" value="allocation_date : TIMESTAMP DEFAULT CURRENT_TIMESTAMP" vertex="1">
+          <mxGeometry height="22" width="340" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="classrooms" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" value="classrooms" vertex="1">
+          <mxGeometry height="156" width="295" x="820" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="classrooms_0" parent="classrooms" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=1;" value="PK     room_id : INT" vertex="1">
+          <mxGeometry height="22" width="295" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="classrooms_1" parent="classrooms" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" value="       room_number : VARCHAR(20)" vertex="1">
+          <mxGeometry height="22" width="295" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="classrooms_2" parent="classrooms" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" value="       building : VARCHAR(100)" vertex="1">
+          <mxGeometry height="22" width="295" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="classrooms_3" parent="classrooms" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" value="       floor : INT" vertex="1">
+          <mxGeometry height="22" width="295" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="classrooms_4" parent="classrooms" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" value="       capacity : INT&#xa;&#xa;UK  (building, room_number)" vertex="1">
+          <mxGeometry height="40" width="295" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="classroom_facilities" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13;" value="classroom_facilities" vertex="1">
+          <mxGeometry height="72" width="295" x="1210" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="classroom_facilities_0" parent="classroom_facilities" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=1;" value="PK,FK  room_id : INT" vertex="1">
+          <mxGeometry height="22" width="295" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="classroom_facilities_1" parent="classroom_facilities" style="text;strokeColor=none;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=1;" value="PK,FK  facility_id : INT" vertex="1">
+          <mxGeometry height="22" width="295" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="rel0" edge="1" parent="1" source="users" style="edgeStyle=none;html=1;endArrow=ERzeroToOne;startArrow=ERmandOne;endFill=0;startFill=0;fontSize=10;fontStyle=2;labelBackgroundColor=#ffffff;" target="faculty" value="is a">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel1" edge="1" parent="1" source="departments" style="edgeStyle=none;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;endFill=0;startFill=0;fontSize=10;fontStyle=2;labelBackgroundColor=#ffffff;" target="faculty" value="employs">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel2" edge="1" parent="1" source="departments" style="edgeStyle=none;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;endFill=0;startFill=0;fontSize=10;fontStyle=2;labelBackgroundColor=#ffffff;" target="courses" value="offers">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel3" edge="1" parent="1" source="courses" style="edgeStyle=none;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;endFill=0;startFill=0;fontSize=10;fontStyle=2;labelBackgroundColor=#ffffff;" target="course_offerings" value="scheduled as">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel4" edge="1" parent="1" source="faculty" style="edgeStyle=none;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;endFill=0;startFill=0;fontSize=10;fontStyle=2;labelBackgroundColor=#ffffff;" target="course_offerings" value="teaches">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel5" edge="1" parent="1" source="course_offerings" style="edgeStyle=none;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;endFill=0;startFill=0;fontSize=10;fontStyle=2;labelBackgroundColor=#ffffff;" target="allocations" value="is allocated">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel6" edge="1" parent="1" source="classrooms" style="edgeStyle=none;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;endFill=0;startFill=0;fontSize=10;fontStyle=2;labelBackgroundColor=#ffffff;" target="allocations" value="hosts">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel7" edge="1" parent="1" source="time_slots" style="edgeStyle=none;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;endFill=0;startFill=0;fontSize=10;fontStyle=2;labelBackgroundColor=#ffffff;" target="allocations" value="occupied in">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel8" edge="1" parent="1" source="course_offerings" style="edgeStyle=none;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;endFill=0;startFill=0;fontSize=10;fontStyle=2;labelBackgroundColor=#ffffff;" target="offering_required_facilities" value="requires">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel9" edge="1" parent="1" source="facilities" style="edgeStyle=none;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;endFill=0;startFill=0;fontSize=10;fontStyle=2;labelBackgroundColor=#ffffff;" target="offering_required_facilities" value="required by">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel10" edge="1" parent="1" source="classrooms" style="edgeStyle=none;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;endFill=0;startFill=0;fontSize=10;fontStyle=2;labelBackgroundColor=#ffffff;" target="classroom_facilities" value="has">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel11" edge="1" parent="1" source="facilities" style="edgeStyle=none;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;endFill=0;startFill=0;fontSize=10;fontStyle=2;labelBackgroundColor=#ffffff;" target="classroom_facilities" value="available in">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SEmP82pAwYc2_eG7mbog-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="&lt;div&gt;ALLOCATIONS:&lt;/div&gt;&lt;div&gt;UK (room_id, slot_id, day_of_week)&lt;/div&gt;&lt;div&gt;UK (offering_id, slot_id, day_of_week)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="230" x="450" y="720" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
